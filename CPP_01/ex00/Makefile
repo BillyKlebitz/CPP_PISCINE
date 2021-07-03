@@ -1,8 +1,8 @@
 
-NAME = ZombieHorde
+NAME = Zombie
 CPP = clang++ 
 CPP_FLAGS = -std=c++98 -Wall -Wextra -Werror 
-OBJS = main.o Zombie.o ZombieHorde.o
+OBJS = main.o Zombie.o newZombie.o randomChump.o
 
 all:	$(NAME)
 
@@ -17,3 +17,4 @@ fclean: clean
 re: fclean all
 
 .PHONY: all, clean, fclean, re
+

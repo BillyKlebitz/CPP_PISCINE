@@ -1,11 +1,5 @@
 #include "Karen.hpp"
 
-//Karen::Karen()
-//{
-//	levels[0] =  this->*(debug);
-//	levels[1] = &this->info;
-//}
-
 void	Karen::debug(){
 
 	std::cout 
@@ -62,6 +56,7 @@ void	Karen::complain( std::string level ){
 	{
 		case 0:
 			std::cout << " Probably complaining about insignificant problems" << std::endl;
+			break;
 		case 1:
 			std::cout << "[ DEBUG ]" << std::endl;
 			(this->*levels[0])();
@@ -75,9 +70,4 @@ void	Karen::complain( std::string level ){
 			std::cout << "[ ERROR ]" << std::endl;
 			(this->*levels[3])();
 	}
-	
-//	if (i > 0)
-//		(this->*levels[i-1])();
-//	else
-//		std::cout << " Probably complaining about insignificant problems" << std::endl;
 }

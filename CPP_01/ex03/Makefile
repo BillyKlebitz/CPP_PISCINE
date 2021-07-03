@@ -1,8 +1,8 @@
 
-NAME = ZombieHorde
+NAME = Violence
 CPP = clang++ 
 CPP_FLAGS = -std=c++98 -Wall -Wextra -Werror 
-OBJS = main.o Zombie.o ZombieHorde.o
+OBJS = main.o HumanA.o HumanB.o Weapon.o
 
 all:	$(NAME)
 
