@@ -1,7 +1,7 @@
 
 NAME = Triangle
 CPP = clang++ 
-CPP_FLAGS = -std=c++98 -Wall -Wextra -Werror 
+CPP_FLAGS = -g -std=c++98 -Wall -Wextra -Werror 
 OBJS = main.o Fixed.o Point.o
 
 all:	$(NAME)
