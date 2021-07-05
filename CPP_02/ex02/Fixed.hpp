@@ -18,6 +18,8 @@ class Fixed{
 		float toFloat( void ) const;
 		int toInt( void ) const;
 		virtual ~Fixed();
+		static const	Fixed & min(Fixed const &a, Fixed const &b);
+		static const	Fixed & max(Fixed const &a, Fixed const &b);
 		Fixed &		operator=(Fixed const &rhs);
 		bool 		operator>(Fixed const &rhs);
 		bool 		operator<(Fixed const &rhs);

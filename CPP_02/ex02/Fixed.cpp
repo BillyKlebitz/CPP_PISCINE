@@ -1,7 +1,6 @@
 #include "Fixed.hpp"
 
 Fixed::Fixed(){
-	std::cout << "Default constructor called" << std::endl;
 	this->raw_bits = 0;
 }
 
@@ -38,6 +37,7 @@ void	Fixed::setRawBits( int const raw ){
 	this->raw_bits = raw;
 }
 
+
 Fixed	& Fixed::operator=(Fixed const &rhs)
 {
 	std::cout << "Assignation operator called" << std::endl;
@@ -60,7 +60,8 @@ Fixed	& Fixed::operator-(Fixed const &rhs)
 
 Fixed	& Fixed::operator*(Fixed const &rhs)
 {
-	this->raw_bits *= rhs.getRawBits();
+	this->raw_bits *= rhs.getRawBits()>>this->fractional_bits;
+	
 	return *this;
 }
 
@@ -121,15 +122,17 @@ Fixed &		Fixed::operator--(){
 
 Fixed	Fixed::operator++(int){
 
-	Number 
+	Fixed tmp; 
+	tmp.setRawBits((float)this->raw_bits);	
 	++this->raw_bits;
-	return *this;
+	return tmp; 
 }
 
 Fixed 	Fixed::operator--(int){
 
+	Fixed tmp((float)this->raw_bits); 
 	--this->raw_bits;
-	return *this;
+	return tmp; 
 }
 
 std::ostream	&operator<<(std::ostream & o, Fixed const &rhs)
@@ -154,5 +157,4 @@ int Fixed::toInt( void ) const{
 }
 
 Fixed::~Fixed(){
-	std::cout << "Destructor called" << std::endl;
 }
