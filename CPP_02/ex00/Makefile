@@ -1,5 +1,5 @@
 
-NAME = KarenFilter
+NAME = Fixed
 CPP = clang++ 
 CPP_FLAGS = -std=c++98 -Wall -Wextra -Werror 
 OBJS = main.o Fixed.o

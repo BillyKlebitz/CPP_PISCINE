@@ -34,7 +34,7 @@ int main( void ) {
 	Point	a(0.0, 0.0);
 	Point	b(1.0,1.0);
 	Point	c(0.0,1.0);
-	Point 	i(0.5,0.4);
+	Point 	i(0.5,0.6);
 
 	std::cout << bsp(a,b,c,i);
 	return 0;

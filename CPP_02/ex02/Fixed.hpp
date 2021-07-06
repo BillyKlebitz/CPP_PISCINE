@@ -11,16 +11,16 @@ class Fixed{
 
 	public:
 
-		Fixed();
-		Fixed(Fixed const & src);
+		Fixed();//canonical
+		Fixed(Fixed const & src);//canonical
 		Fixed(int const value);
 		Fixed(float const value);
 		float toFloat( void ) const;
 		int toInt( void ) const;
-		virtual ~Fixed();
+		virtual ~Fixed();//canonical
 		static const	Fixed & min(Fixed const &a, Fixed const &b);
 		static const	Fixed & max(Fixed const &a, Fixed const &b);
-		Fixed &		operator=(Fixed const &rhs);
+		Fixed &		operator=(Fixed const &rhs);//canonical
 		bool 		operator>(Fixed const &rhs);
 		bool 		operator<(Fixed const &rhs);
 		bool 		operator>=(Fixed const &rhs);
