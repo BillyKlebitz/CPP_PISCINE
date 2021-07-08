@@ -17,6 +17,7 @@ Point::Point(Point const &src){
 	*this=src;
 }
 
+
 Point &	Point::operator=(Point const &src){
 
 	this->x = src.x;	

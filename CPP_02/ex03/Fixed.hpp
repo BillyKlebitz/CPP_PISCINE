@@ -37,6 +37,8 @@ class Fixed{
 		Fixed 		operator--(int);//postfix
 		int	getRawBits( void ) const;
 		void	setRawBits(int const raw);
+
+	int getRawBits1() const;
 };
 
 std::ostream	& operator<<(std::ostream & o, Fixed const &rhs);

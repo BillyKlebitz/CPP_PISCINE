@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-
-
 float Point::sign (Point p1, Point p2, Point p3)
 {
 	Fixed 	tmp;

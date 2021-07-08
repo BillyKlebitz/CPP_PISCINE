@@ -16,7 +16,9 @@ class Point{
 		Fixed	getY();
 		static float sign (Point p1, Point p2, Point p3);
 
-	private:
+	void setX(const Fixed &x);
+
+private:
 		Fixed	x;
 		Fixed	y;
 

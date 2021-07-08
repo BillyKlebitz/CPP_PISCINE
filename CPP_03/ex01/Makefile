@@ -1,7 +1,7 @@
-NAME = Triangle
+NAME = ClapTrap
 CPP = clang++ 
-CPP_FLAGS = -g -std=c++98 -Wall -Wextra -Werror 
-OBJS = main.o Fixed.o Point.o
+CPP_FLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror
+OBJS = main.o ClapTrap.o ScavTrap.o
 
 all:	$(NAME)
 
