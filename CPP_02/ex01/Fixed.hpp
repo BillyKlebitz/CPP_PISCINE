@@ -4,23 +4,23 @@
 #include <cmath>
 class Fixed{
 
-	private:
-	
-		int raw_bits;
-		static const int fractional_bits = 8;
-
 	public:
 
-		Fixed();
-		Fixed(Fixed const & src);
+		Fixed();//canonical
+		Fixed(Fixed const & src);//canonical
 		Fixed(int const value);
 		Fixed(float const value);
 		float toFloat( void ) const;
 		int toInt( void ) const;
-		virtual ~Fixed();
-		Fixed &		operator=(Fixed const &rhs);
+		virtual ~Fixed();//canonical
+		Fixed &		operator=(Fixed const &rhs);//canonical
 		int	getRawBits( void ) const;
 		void	setRawBits(int const raw);
+
+	private:
+	
+		int raw_bits;
+		static const int fractional_bits = 8;
 };
 
 std::ostream	& operator<<(std::ostream & o, Fixed const &rhs);
