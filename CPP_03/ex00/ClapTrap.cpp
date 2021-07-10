@@ -7,6 +7,13 @@ ClapTrap::ClapTrap(std::string name)
 	this->_Hitpoints = 10;
 	this->_Energy_points = 10;
 	this->_Attack_damage = 0;
+	
+	std::cout 
+		<< "ClapTrap " << this->_Name 
+		<< " with " << this->_Hitpoints << " Hitpoints, " 
+		<< this->_Energy_points  << " Energy and "
+	  	<< this->_Attack_damage << " Attack Damage"
+		" is born!" << std::endl;
 }
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &src)
@@ -43,14 +50,18 @@ int ClapTrap::attack(const std::string &target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-
+	if (this->_Hitpoints == 0)
+	{
+		std::cout << "ClapTrap " << this->_Name << " is already dead." << std::endl; 
+		return;
+	}
 	std::cout
 			<< "ClapTrap " << this->_Name
 			<< " takes " << amount << " points of damage!"
 			<< std::endl;
-	if (this->_Hitpoints < amount)
+	if (this->_Hitpoints <= amount)
 	{
-		std::cout << " my nigga dead, bruh " << std::endl;
+		std::cout << "ClapTrap " << this->_Name << " is DEAD." << std::endl; 
 		this->_Hitpoints = 0;
 	}
 	else
@@ -69,6 +80,7 @@ void ClapTrap::beRepaired(unsigned int amount)
 
 ClapTrap::~ClapTrap(){
 
+	std::cout << "ClapTrap " << this->_Name << " destroyed" << std::endl;
 }
 
 

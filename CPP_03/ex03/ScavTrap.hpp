@@ -6,6 +6,8 @@ class ScavTrap: virtual public ClapTrap{
 
 	public:
 		ScavTrap(std::string name);
+		virtual ~ScavTrap();
+		int attack(std::string const & target);
 		void guardGate();
 };
 

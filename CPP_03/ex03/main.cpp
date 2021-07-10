@@ -22,8 +22,13 @@ int main()
 	for (i = 0; i < 3; i++)
 	{
 		Kizaru.attack ("Morgen");
-		Morgen.takeDamage(20);
+		Morgen.takeDamage(30);
 	}
 	Shilo.highFivesGuys();	
+	Tema.whoAmI();
+	Tema.attack("Shilo");
+	Tema.guardGate();
+	Shilo.takeDamage(20);
+	Tema.highFivesGuys();	
 	return 0;
 }

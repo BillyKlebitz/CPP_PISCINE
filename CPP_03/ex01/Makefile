@@ -1,6 +1,6 @@
-NAME = ClapTrap
+NAME = ScavTrap
 CPP = clang++ 
-CPP_FLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror
+CPPFLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror
 OBJS = main.o ClapTrap.o ScavTrap.o
 
 all:	$(NAME)

@@ -7,16 +7,13 @@ ClapTrap::ClapTrap(std::string name)
 	this->_Hitpoints = 10;
 	this->_Energy_points = 10;
 	this->_Attack_damage = 0;
-	std::cout << "ClapTrap " << this->_Name << " is created! Hell Yeah!" << std::endl;
-}
-
-ClapTrap::ClapTrap(std::string Name, int Hitpoints, int Energy_points, int Attack_damage){
-
-
-	this->_Name = Name;
-	this->_Hitpoints = Hitpoints;
-	this->_Energy_points = Energy_points;
-	this->_Attack_damage = Attack_damage;
+	
+	std::cout 
+		<< "ClapTrap " << this->_Name 
+		<< " with " << this->_Hitpoints << " Hitpoints, " 
+		<< this->_Energy_points  << " Energy and "
+	  	<< this->_Attack_damage << " Attack Damage"
+		" is born!" << std::endl;
 }
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &src)
@@ -53,7 +50,6 @@ int ClapTrap::attack(const std::string &target)
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-
 	if (this->_Hitpoints == 0)
 	{
 		std::cout << "ClapTrap " << this->_Name << " is already dead." << std::endl; 

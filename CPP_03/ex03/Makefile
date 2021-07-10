@@ -1,6 +1,6 @@
 NAME = DiamondTrap
 CPP = clang++ 
-CPP_FLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror
+CPPFLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror -Wshadow -Wno-shadow
 OBJS = main.o ClapTrap.o ScavTrap.o FragTrap.o DiamondTrap.o
 
 all:	$(NAME)

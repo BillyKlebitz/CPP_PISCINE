@@ -20,7 +20,7 @@ int main()
 	for (i = 0; i < 3; i++)
 	{
 		Kizaru.attack ("Morgen");
-		Morgen.takeDamage(20);
+		Morgen.takeDamage(30);
 	}
 	Shilo.highFivesGuys();	
 	return 0;
