@@ -83,6 +83,3 @@ ClapTrap::~ClapTrap(){
 	std::cout << "ClapTrap " << this->_Name << " destroyed" << std::endl;
 }
 
-
-
-
