@@ -1,11 +1,11 @@
-#ifndef CAT_HPP
-#define CAT_HPP
+#ifndef DOG_HPP
+#define DOG_HPP
 #include "Animal.hpp"
 
-class Cat: virtual public Animal{
+class Dog: virtual public Animal{
 	
 	public:
-		Cat();
+		Dog();		
 		virtual void makeSound() const;		
 };
 

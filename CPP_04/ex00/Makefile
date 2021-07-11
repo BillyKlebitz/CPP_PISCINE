@@ -1,7 +1,7 @@
 NAME = Animal
 CPP = clang++ 
-CPPFLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror -Wshadow -Wno-shadow
-OBJS = main.o 
+CPPFLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror 
+OBJS = Animal.o Cat.o Dog.o main.o WrongAnimal.o WrongCat.o 
 
 all:	$(NAME)
 

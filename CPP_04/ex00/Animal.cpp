@@ -1,7 +1,7 @@
 #include "Animal.hpp"
 
 Animal::Animal(){
-	std::cout << " Animal created " << std::endl;
+	std::cout << "Animal created" << std::endl;
 }
 
 Animal & Animal::operator=(const Animal &src){
@@ -14,15 +14,17 @@ Animal::Animal(Animal & src){
 	this->type = src.type;
 }
 
-void const	Animal::makeSound()
+void Animal::makeSound() const
 {
-	//if (!this->type)
-	//	std::cout << " * * * " << std::endl;
-	if (this->type == "Cat")
-		std::cout << "Meow" << std::endl;
+	std::cout << "* * * " <<std::endl;
 }
 
-std::string const Animal::getType(){
+std::string Animal::getType()const	{
 
 	return this->type;
+}
+
+
+Animal::~Animal(){
+	std::cout << "Animal destroyed" << std::endl;
 }
