@@ -1,7 +1,7 @@
 NAME = Interface
 CPP = clang++ 
 CPPFLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror 
-OBJS = main.o
+OBJS = main.o AMateria.o Character.o Cure.o Ice.o MateriaSource.o
 
 all:	$(NAME)
 
