@@ -20,7 +20,7 @@ int main()
 		delete Zoo[n];
 	
 	
-	
+	//Animal meta;	
 	Cat* a = new Cat();
 	Cat* b = new Cat();	
 

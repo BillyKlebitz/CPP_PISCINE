@@ -1,4 +1,4 @@
-NAME = Brain
+NAME = Abstract
 CPP = clang++ 
 CPPFLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror 
 OBJS = Animal.o Cat.o Dog.o main.o Brain.o
