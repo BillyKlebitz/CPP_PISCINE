@@ -11,6 +11,24 @@ void	MateriaSource::learnMateria(AMateria* src){
 		materias[i] = src;
 }
 
+MateriaSource::MateriaSource(){
+
+	for (int i=0; i < 4; i++)
+		this->materias[i] = 0;
+}
+
+MateriaSource & MateriaSource::operator=(MateriaSource const & src){
+
+	for (int i=0; i < 4; i++)
+		if (src.materias[i] != 0)
+			this->materias[i] = src.materias[i]->clone();
+	return *this;
+}
+
+MateriaSource::MateriaSource(MateriaSource const & src){
+
+	*this = src;
+}
 
 AMateria* MateriaSource::createMateria(std::string const & type){
 

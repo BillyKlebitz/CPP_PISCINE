@@ -20,8 +20,13 @@ int main()
 	ICharacter* bob = new Character("bob");
 	me->use(0, *bob);
 	me->use(1, *bob);
-	delete bob;
+	ICharacter* cpy = new Character("cpy");
+	*(Character *)cpy = *(Character *)me;
 	delete me;
+	cpy->use(0, *bob);
+	cpy->use(1, *bob);
+	delete cpy;
+	delete bob;
 	delete src;
 	return 0;
 }

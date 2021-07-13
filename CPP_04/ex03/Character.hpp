@@ -7,6 +7,8 @@ class Character : public ICharacter
 {
 	public:
 		Character(std::string name);
+		Character(Character const & src);
+		Character & operator=(Character const & src);
 		virtual ~Character();
 		virtual std::string const & getName() const;
 		virtual void equip(AMateria* m);

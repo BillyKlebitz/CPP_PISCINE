@@ -7,6 +7,9 @@
 class MateriaSource : public IMateriaSource{
 
 	public:
+		MateriaSource();
+		MateriaSource & operator=(MateriaSource const & src);
+		MateriaSource(MateriaSource const & src);
 		~MateriaSource();
 		void learnMateria(AMateria* src);
 		AMateria* createMateria(std::string const & type);
