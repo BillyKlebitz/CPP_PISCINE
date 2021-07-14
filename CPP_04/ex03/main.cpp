@@ -22,6 +22,9 @@ int main()
 	me->use(1, *bob);
 	ICharacter* cpy = new Character("cpy");
 	*(Character *)cpy = *(Character *)me;
+	AMateria* a =  new Ice();
+	AMateria* b =  a->clone();
+	delete b;
 	delete me;
 	cpy->use(0, *bob);
 	cpy->use(1, *bob);
