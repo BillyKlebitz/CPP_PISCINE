@@ -10,8 +10,7 @@ class Bureaucrat {//NEEDS OTRHODOX
 		Bureaucrat(std::string name, int grade);
 		void	incrementGrade();
 		void	decrementGrade();
-		int	getGrade() const;
-		std::ostream & operator<<(std::ostream & o);
+		int		getGrade() const;
 		class GradeTooHighException : public std::exception{
 			public:
 				virtual const char* what() const throw()
@@ -32,4 +31,5 @@ class Bureaucrat {//NEEDS OTRHODOX
 
 };
 
+std::ostream & operator<<(std::ostream & o, const Bureaucrat &bureaucrat);
 #endif

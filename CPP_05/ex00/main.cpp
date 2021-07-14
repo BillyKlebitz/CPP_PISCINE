@@ -2,6 +2,9 @@
 
 int main(){
 
-	Bureaucrat bob("lol",155);
+	Bureaucrat bob("Bob",150);
+	//bob.decrementGrade();
+	bob.incrementGrade();
+	std::cout << bob << std::endl;
 }
 
