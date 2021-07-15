@@ -1,7 +1,7 @@
-NAME = Bureaucrat
+NAME = Form
 CPP = clang++ 
-CPPFLAGS =  -g -std=c++98 -pedantic -Wall -Wextra -Werror 
-OBJS = main.o Bureaucrat.o
+CPPFLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror 
+OBJS = main.o Bureaucrat.o Form.o
 
 all:	$(NAME)
 

@@ -14,18 +14,13 @@ Bureaucrat::Bureaucrat(Bureaucrat & src) : name(src.name){
 
 Bureaucrat::Bureaucrat(std::string const name, int grade) : name(name)
 {
-	try
-	{
-		if (grade > 150)
-			throw Bureaucrat::GradeTooLowException();
-		if (grade < 1)
-			throw Bureaucrat::GradeTooHighException();
+
+	if (grade > 150)
+		throw Bureaucrat::GradeTooLowException();
+	if (grade < 1)
+		throw Bureaucrat::GradeTooHighException();
+	else
 		this->grade = grade;
-	}
-	catch(std::exception &e)
-	{
-		std::cout << e.what() << std::endl;
-	}
 }
 
 std::string	Bureaucrat::getName() const{

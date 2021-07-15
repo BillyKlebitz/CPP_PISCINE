@@ -22,17 +22,10 @@ std::string	Form::getName() const{
 
 void Form::beSigned(Bureaucrat & bureaucrat){
 
-	try{
-
-		if (bureaucrat.getGrade() <= this->grade_to_sign)
-			this->is_signed = 1;
-		else
-			throw Form::GradeTooLowException();
-	}
-	catch(std::exception &e)
-	{
-		std::cout << e.what() << std::endl;
-	}
+	if (bureaucrat.getGrade() <= this->grade_to_sign)
+		this->is_signed = 1;
+	else
+		throw Form::GradeTooLowException();
 }
 
 int	Form::getToSign() const{

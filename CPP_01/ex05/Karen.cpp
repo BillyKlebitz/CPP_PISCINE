@@ -56,7 +56,6 @@ void	Karen::complain( std::string level ){
 	this->levels[2] = &Karen::warning; 
 	this->levels[3] = &Karen::error; 
 	
-
 	i = calclevel(level);	
 	if (i > 0)
 		(this->*levels[i-1])();

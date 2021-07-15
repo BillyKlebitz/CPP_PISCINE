@@ -1,4 +1,4 @@
-#ifndef KAREN_HPP
+ifndef KAREN_HPP
 #define	KAREN_HPP
 #include <iostream>
 
@@ -10,7 +10,6 @@ typedef void(Karen::*funct)();
 		void complain( std::string level );
 	private:
 
-			 
 		int		calclevel(std::string level);
 		void 	debug( void );
 		void	info( void );
