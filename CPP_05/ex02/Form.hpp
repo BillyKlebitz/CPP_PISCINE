@@ -3,6 +3,10 @@
 
 #include "Bureaucrat.hpp"
 #include <fstream>
+#include <random>
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
 class Bureaucrat;
 class Form{

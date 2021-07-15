@@ -1,7 +1,7 @@
 NAME = Form
 CPP = clang++ 
 CPPFLAGS =  -std=c++98 -pedantic -Wall -Wextra -Werror 
-OBJS = main.o Bureaucrat.o Form.o
+OBJS = main.o Bureaucrat.o Form.o Shrubbery.o
 
 all:	$(NAME)
 

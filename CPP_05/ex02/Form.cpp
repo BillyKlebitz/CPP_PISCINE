@@ -61,118 +61,6 @@ std::string	Form::getTarget(void) const{
 	return this->target;
 }
 
-ShrubberyCreationForm::ShrubberyCreationForm(std::string target) : Form("ShrubberyCreationForm",145,137) {
-	this->setTarget(target);
-}
-
-void	ShrubberyCreationForm::execute(Bureaucrat const & executor) const{
-
-	if(this->checkForm(executor))
-		return;
-	std::ofstream myfile;
-	myfile.open(this->getTarget() + "_shrubbery");
-	
-	
-myfile << "                                                                                    @@#        &@@@@#    .&@/                                                                                          "<< std::endl;
-myfile << "                                                                                   @@          @&     @@     %@#                                                                                       " << std::endl;
-myfile << "                                                                                  @@           @/      @      %@,                                                                                      " << std::endl;
-myfile << "                                                                                 *@               /&&&&&       @@                                                                                      " << std::endl;
-myfile << "                                                                                 @(                             @(                                                                                     " << std::endl;
-myfile << "                                                                            @@/                                 /@                                                                                     " << std::endl;
-myfile << "                                                                          @@                                     @@                                                                                    " << std::endl;
-myfile << "                                                                        ,@,                 *@@/                  @%                                                                                   " << std::endl;
-myfile << "                                                                        @,                  #@ ,@,                .@,                                                                                  " << std::endl;
-myfile << "                                                                       *&                 &@    @,                 %@                                                                                  " << std::endl;
-myfile << "                                                                       @.                @*     @,                  @%                                                                                 " << std::endl;
-myfile << "                                                                       @.               %&     #@                   *@,                                                                                " << std::endl;
-myfile << "                                                                       @.               %(   ,@(                     *@.                                                                               " << std::endl;
-myfile << "                                                                       *@%               *@@@,                        %@                                                                               " << std::endl;
-myfile << "                                                                         @%                             @@@%           &@                                                                              " << std::endl;
-myfile << "                                                                        &@@@                           %(  /@*          &@                                                                             " << std::endl;
-myfile << "                                                                       @@                              %(    #@(         *@(                                                                           " << std::endl;
-myfile << "                                                                     /@/                                @&     ,@%         @@                                                                          " << std::endl;
-myfile << "                                                                   @@&            #@@@                   &@(     @@@         @@,                                                                       " << std::endl;
-myfile << "                                                                  @@             &(     /@@@@              *@@@####@(         (@*                                                                      " << std::endl;
-myfile << "                                                               *@@               &*        /@@                                  *@@                                                                    " << std::endl;
-myfile << "                                                             (@%                 .@#         @@                                    @@                                                                  " << std::endl;
-myfile << "                                                           %@.                     #@#      ,@*                                      &@                                                                " << std::endl;
-myfile << "                                                        (@&                           &@@%@@@                                          .@@                                                             " << std::endl;
-myfile << "                                                     &@@       .(&&&&&&&&&&&&..                                                           *@@.                                                         " << std::endl;
-myfile << "                                                 *@@.       @@,                 .(@@#                                                         @@@                                                      " << std::endl;
-myfile << "                                             ,@@# %@       *&                         @@                                                          @@/                                                  " << std::endl;
-myfile << "                                          #@@.     &/      *&                           #@.                                                          (@&                                               " << std::endl;
-myfile << "                                       #@&         &@      *&                             @#                                                            ,@@,                                           " << std::endl;
-myfile << "                                    &@%          ,@#       %@*                            .@                                    @*                         /@@.                                        " << std::endl;
-myfile << "                                 @@%           @@/           @@.                         @@                  @# .@@            @@.%@                        ,@@@@@@@&.                                 " << std::endl;
-myfile << "                            #@@@@@@@@@@@@@@@@@/                 %@@.                   @@,                    /////             ,@. @@                               *@,                               " << std::endl;
-myfile << "                          ,@@                                       *%@@@@@@@@@@@@@@@&/                                          ,@..@                                 @                               " << std::endl;
-myfile << "                        @@.                                                                                                        (@.                                 (@@/                            " << std::endl;
-myfile << "                      @&                                ((@@@@@@@@@@@@@@@@@@@@@#///////////@@@@@///////////%@@@@@@@@@@@@@@@@@@@@@((                                     @,@%                           " << std::endl;
-myfile << "                    @@                      ,@@@@@&&                                                                                   &&@@@@&,                         ,@ @@                          " << std::endl;
-myfile << "                   @@   @@@@@        (&@@&,                                         @@(                           %.                            ,&@@&/                   @( @/                         " << std::endl;
-myfile << "                  @@    &@@@@   (@@/                                                  .@@                         @@                                   /@@(               /*/@                         " << std::endl;
-myfile << "                 @@         .@@*                                                         @@                       %@                      &@               /@@.              @%                        " << std::endl;
-myfile << "                (@        @@.              ./@@@@@&%*                                     *@(                     ,@                      @@                  .@@            (@,                       " << std::endl;
-myfile << "               %@      .@@                             *#@@@/                               @@                    @@                     (@,                     @@           @&                       " << std::endl;
-myfile << "               @/     @@    @@@@@&,,                          *@@@,                          %@                  /@.                     @%                        @@         *@.                      " << std::endl;
-myfile << "              ,@     @@               ..@@@@@@@&%                  .(@@@.                     %@                 @&                     @@                          @@         @&                      " << std::endl;
-myfile << "              ,@    @(                               (((@@@@@@//          #@@@/.               @&               @&                    %@#                (@%         #@        %@                      " << std::endl;
-myfile << "               @/   @,                                           .%@@@@@,        %@@,     ,@@@@%%......(%@@@@@,@@                *@@@,               ,@@@.            %@       %@                      " << std::endl;
-myfile << "               %@   @,                                                     @@@.     %@@@@.                      ,@@@/       #@@&.              /@@@@,                 .@       %@                      " << std::endl;
-myfile << "                @@  @&          .@@@@@&((            (((((((((@@@@@@@@@@@@//  (@@@.                                  .&@@@@/              /@@@(                       .@       %@                      " << std::endl;
-myfile << "                 @@ ,@/                                                    @@(                                           #@@        .@@@@                             .@       @/                      " << std::endl;
-myfile << "                  &@. @@                                                #@%                                                 &@@@@@/.                                  .@      *@                       " << std::endl;
-myfile << "                   *@( .@@                                             @&                                                     (@,                                     /@      @&                       " << std::endl;
-myfile << "                     @@   &@@                                .@@@(   ,@(                                                        @&                                    @(     #@                        " << std::endl;
-myfile << "                       @&     @@%                     .@@@@@,       *@*                                                          &@,@@@@@@@&%%%                     /@/     #@                         " << std::endl;
-myfile << "                         &@/      &@@/         /@@@@%               @&                       (#%                                  %@                 ###@@@@      .@@      ,@,                         " << std::endl;
-myfile << "                            .&@@#.     .%@@@&,                     %@                                              .%@&.           &@                          *@@.       @@.                          " << std::endl;
-myfile << "                                  ,@@@@%        ,,@@@@@@@@@@@@@@@@@@.                                                     (%        @%                    %@@@#        *@@/                            " << std::endl;
-myfile << "                                          /#@@@@@@%////.          @@       @@@@@@@@@@(                                        #     #@          //%@@@@@#         (@@@(                                " << std::endl;
-myfile << "                                                                 *@,     @@  @@@@@@@@@(.&@@   %           @     ,&@@@@@@@@.          @@&&&....               %@@%                                      " << std::endl;
-myfile << "                                                                 @@      @@# @@@@@@@@@#   ,@@  ((          #.@@* &@@@@@@@,@@        .@@@@&##############@@@#                                           " << std::endl;
-myfile << "                                                                 @          /@@@@@@@@@   #@@                @@   @@@@@@@@,,@,        @(                                                                " << std::endl;
-myfile << "                                                                #@                 *@@@@@                    .@@ @@@@@@@@  @,       @@                                                                 " << std::endl;
-myfile << "                                                                @#                                               *@@@@@@**         /@                                                                  " << std::endl;
-myfile << "                                                               /@                                                                  @(                                                                  " << std::endl;
-myfile << "                                                               @*                                      &                          @@                                                                   " << std::endl;
-myfile << "                                                              @@                                      .@                         ,@                                                                    " << std::endl;
-myfile << "                                                             #@.                                      .@                         @@                                                                    " << std::endl;
-myfile << "                                                             @#                                       .@(                        @&                                                                    " << std::endl;
-myfile << "                                                            &@                                          @@.                     /@                                                                     " << std::endl;
-myfile << "                                                            @*                        @@,                 @&                    /@                                                                     " << std::endl;
-myfile << "                                                           *@                         @.                  @(                    /@                                                                     " << std::endl;
-myfile << "                                                           @&                         #@@*    @@@.   @@@@@@                     /@                                                                     " << std::endl;
-myfile << "                                                           @#                                                                   #@                                                                     " << std::endl;
-myfile << "                                                          #@.                                                                   @%                                                                     " << std::endl;
-myfile << "                                                          #@                                                                    @%                                                                     " << std::endl;
-myfile << "                                                          @#                                                                    @%                                                                     " << std::endl;
-myfile << "                                                          @#                                                                    (@                                                                     " << std::endl;
-myfile << "                                                          @                                                                      (@                                                                    " << std::endl;
-myfile << "                                                          @                                                       ,@@              @&                                                                  " << std::endl;
-myfile << "                                                         @@                ,,,&&&&&&&&&@@@@@@@@@@@@@@@@@@@&&&&&%,.                  @@                                                                 " << std::endl;
-myfile << "                                                         @@                                                                           @%                                                               " << std::endl;
-myfile << "                                                         @*                                                                            ,@/                                                             " << std::endl;
-myfile << "                                                         @*                                                                              #@,                                                           " << std::endl;
-myfile << "                                                        #@                                                                                 &@                                                          " << std::endl;
-myfile << "                                                        @#                                                                                   %@#                                                       " << std::endl;
-myfile << "                                                       @@                                                                                       @@/                                                    " << std::endl;
-myfile << "                                                      (@                                                                                           .@@/                                                " << std::endl;
-myfile << "                                                     ,@,                                                                                               %@@                                             " << std::endl;
-myfile << "                                                     @*                                                                                                   ,@@,                                         " << std::endl;
-myfile << "                                                   .@*                                                                                                        @@.                                      " << std::endl;
-myfile << "                                                  /@*                                                                                                            @@*                                   " << std::endl;
-myfile << "                                                 @@                                                                                                                 @@,                                " << std::endl;
-myfile << "                                               @@.                                                                                                                     @@.                             " << std::endl;
-myfile << "                                             @@                                                                                                                          #@.                           " << std::endl;
-myfile << "                                          .@@                                                                                                                              @@                          " << std::endl;
-myfile << "                                        &@(                                                                                                                                  @&                        " << std::endl;
-myfile << "                                     #@@                                                                                                                                      *@(                      " << std::endl;
-myfile << "                                   @@                                                                                                                                           #@%                    " << std::endl;
-myfile << "                   ,        ,/@@@@                                                                                                                                                 (@@.                " << std::endl;
-myfile << "        ,&@@@@@@&@@&........                                                                                                                                                           *@@%            " << std::endl;
-	
-}
 
 RobotomyRequestForm::RobotomyRequestForm(std::string target) : Form("RobotomyRequestForm",72,45) {
 	this->setTarget(target);
@@ -182,6 +70,13 @@ void	RobotomyRequestForm::execute(Bureaucrat const & executor) const{
 
 	if(!this->checkForm(executor))
 		return;
+	srand((unsigned)time(NULL));
+	std::cout << "BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR..." <<  std::endl;
+	if (rand() % 2)
+		std::cout << this->getTarget() <<" has been robotomized successfully" << std::endl;
+	else
+		std::cout << "Fuck... Didn`t work, next time" << std::endl;
+
 }
 
 PresidentialPardonForm::PresidentialPardonForm(std::string target) : Form("PresidentialPardonForm",25,5) {
@@ -192,4 +87,5 @@ void	PresidentialPardonForm::execute(Bureaucrat const & executor) const{
 
 	if(!this->checkForm(executor))
 		return;
+	std::cout << this->getTarget() << " has been pardoned by Zafod Beeblerox" << std::endl;
 }
