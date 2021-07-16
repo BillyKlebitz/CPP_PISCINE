@@ -8,12 +8,15 @@ int main(){
 		Form *Robot = new RobotomyRequestForm("Jack");
 		Form *President = new PresidentialPardonForm("Jack");
 		Bureaucrat lol("lol",1);
-		lol.signForm(*Jack);
-		lol.signForm(*Robot);
-		lol.signForm(*President);
+		//lol.signForm(*Jack);
+		//lol.signForm(*Robot);
+		//lol.signForm(*President);
 		Jack->execute(lol);
 		Robot->execute(lol);
 		President->execute(lol);
+		lol.executeForm(*Jack);
+		lol.executeForm(*Robot);
+		lol.executeForm(*President);
 	}
 	catch(std::exception & e)
 	{
