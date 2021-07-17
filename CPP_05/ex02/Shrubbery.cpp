@@ -7,7 +7,7 @@ ShrubberyCreationForm::ShrubberyCreationForm(std::string target) : Form("Shrubbe
 
 void	ShrubberyCreationForm::execute(Bureaucrat const & executor) const{
 
-	if(this->checkForm(executor))
+	if(!this->checkForm(executor))
 		return;
 	std::ofstream myfile;
 	myfile.open(this->getTarget() + "_shrubbery");

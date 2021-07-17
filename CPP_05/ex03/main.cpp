@@ -6,8 +6,8 @@ int main(){
 
 	try{
 		Intern Bob;		
-		Bob.makeForm("shrubbery creation", "bender");
-
+		//Bob.makeForm("shrubbery creation", "bender");
+		Bob.makeForm("0shfrepogjreprubbery creation", "bender");
 	}
 	catch(std::exception & e)
 	{

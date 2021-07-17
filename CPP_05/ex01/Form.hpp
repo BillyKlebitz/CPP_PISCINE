@@ -14,6 +14,7 @@ class Form{
 		int getToSign()	const;
 		int getToExecute()	const;
 		void beSigned(Bureaucrat & bureaucrat);
+		bool			getIsSigned() const;
 		~Form(){};
 		class GradeTooLowException : public std::exception{
 			public:

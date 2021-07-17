@@ -28,6 +28,11 @@ void Form::beSigned(Bureaucrat & bureaucrat){
 		throw Form::GradeTooLowException();
 }
 
+bool	Form::getIsSigned() const{
+
+	return this->is_signed;
+}
+
 int	Form::getToSign() const{
 
 	return this->grade_to_sign;

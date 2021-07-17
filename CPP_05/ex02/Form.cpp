@@ -64,7 +64,6 @@ std::string	Form::getTarget(void) const{
 bool	Form::getIsSigned() const{
 
 	return this->is_signed;
-
 }
 
 RobotomyRequestForm::RobotomyRequestForm(std::string target) : Form("RobotomyRequestForm",72,45) {
