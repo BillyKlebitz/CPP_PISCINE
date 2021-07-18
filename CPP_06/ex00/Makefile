@@ -1,7 +1,7 @@
 NAME = Scalar_Conversion
 CPP = clang++ 
 CPPFLAGS =  -g -std=c++98 -pedantic -Wall -Wextra -Werror 
-OBJS = main.o Bureaucrat.o Form.o Shrubbery.o Intern.o
+OBJS = main.o 
 
 all:	$(NAME)
 
