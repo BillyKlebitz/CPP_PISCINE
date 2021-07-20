@@ -14,7 +14,7 @@ bool is_number(const std::string& s)
 
 bool is_float(const std::string& s)
 {
- 	if (s == "nanf")
+ 	if (s == "nan"
 		return true;
  	if(s.empty() || ((!isdigit(s[0])) && (s[0] != '-') && (s[0] != '+')))
 		return false;
@@ -25,7 +25,7 @@ bool is_float(const std::string& s)
 
 bool is_double(const std::string& s)
 {
- 	if (s == "nan")
+ 	if (s == "nan"
 		return true;
 	if(s.empty() || ((!isdigit(s[0])) && (s[0] != '-') && (s[0] != '+')))
 		return false;

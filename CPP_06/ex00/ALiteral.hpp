@@ -5,7 +5,7 @@
 class ALiteral {
 
 	public:
-		ALiteral(std::string & src) = 0;
+		ALiteral(std::string & src);
 		ALiteral(ALiteral & src);
 		ALiteral & operator=(ALiteral & src);
 		virtual ~ALiteral(){};
