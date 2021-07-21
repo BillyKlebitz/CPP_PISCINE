@@ -68,12 +68,12 @@ void	castInt(double src){
 
 void	castFloat(char src){
 
-	std::cout << "float: "<< static_cast<float>(src) << std::endl;
+	std::cout << "float: "<< std::fixed << std::setprecision(1) << static_cast<float>(src) << "f"  << std::endl;
 
 }
 void	castFloat(int src){
 
-	std::cout << "float: "<< static_cast<float>(src) << std::endl;
+	std::cout << "float: "<< std::fixed << std::setprecision(1) << static_cast<float>(src) << "f"  << std::endl;
 }
 void	castFloat(double src){
 
@@ -81,23 +81,23 @@ void	castFloat(double src){
 	if (src > 3.402823e+38  || src < -3.402823e+38)
 		std::cout << "impossible";
 	else
-		std::cout << static_cast<float>(src);
+		std::cout << "float: "<< std::fixed << std::setprecision(1) << static_cast<float>(src) << "f";
 	std::cout << std::endl;
 }
 
 void	castDouble(char src){
 
-	std::cout << "double: "<< static_cast<double>(src) << std::endl;
+	std::cout << "double: "<< std::fixed << std::setprecision(1) << static_cast<float>(src) << std::endl;
 }
 
 void	castDouble(int src){
 
-	std::cout << "double: "<< static_cast<double>(src) << std::endl;
+	std::cout << "double: "<< std::fixed << std::setprecision(1) << static_cast<float>(src) << std::endl;
 }
 
 void	castDouble(float src){
 
-	std::cout << "double: "<< static_cast<double>(src) << std::endl;
+	std::cout << "double: "<< std::fixed << std::setprecision(1) << static_cast<float>(src) << std::endl;
 }
 
 void	castChar(std::string error){

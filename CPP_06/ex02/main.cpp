@@ -36,6 +36,8 @@ void identify(Base* p){
 			res = dynamic_cast<C*>(p);
 			if (res == NULL)
 				std::cout << "NO SUCH TYPE!!!!!" << std::endl;
+			else
+				std::cout << "ITS C!!!!!" << std::endl;
 		}
 		else
 			std::cout << "ITS B!!!!!" << std::endl;
