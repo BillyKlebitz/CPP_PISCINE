@@ -1,4 +1,4 @@
-NAME = Few
+NAME = Iter
 CPP = clang++ 
 CPPFLAGS =  -g -std=c++98 -pedantic -Wall -Wextra -Werror 
 OBJS = main.o
