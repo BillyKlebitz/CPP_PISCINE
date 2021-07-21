@@ -1,3 +1,6 @@
+#ifndef ITER_HPP
+#define ITER_HPP
+
 template< typename T >
 void	iter(T const *array, unsigned int len,void func(T const & x)){
 	
@@ -7,3 +10,4 @@ void	iter(T const *array, unsigned int len,void func(T const & x)){
 		j++;
 	}
 }
+#endif
