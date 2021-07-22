@@ -1,4 +1,4 @@
-ifndef KAREN_HPP
+#ifndef KAREN_HPP
 #define	KAREN_HPP
 #include <iostream>
 
