@@ -9,7 +9,10 @@ class	Array{
 		T	*_array;
 	public:
 		Array(): _size(0), _array(new T[0]){};
-		Array(unsigned int size): _size(size), _array(new T[size]){};
+		Array(unsigned int size): _size(size), _array(new T[size]){
+		
+			
+		};
 		Array & operator=(Array & src)
 		{
 			unsigned int i = -1;
