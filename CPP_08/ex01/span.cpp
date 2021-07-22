@@ -1,11 +1,9 @@
 #include "span.hpp"
 
-
 Span::Span(unsigned int N){
 	
 	n = N;	
 }
-
 
 Span & Span::operator=(Span const & src){
 	
