@@ -26,6 +26,8 @@ void Span::addNumber(int number){
 	
 	if (numbers.size() < n)
 		numbers.push_back(number);
+	else
+		throw std::exception();
 }
 
 long Span::shortestSpan(){
